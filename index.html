@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="div1" id="div">
+        <div>
+            <h1>Dom Manipulation</h1>
+
+            <div>
+                <button id="btn1">change body background colour</button>
+                <button id="btn2">change image</button>
+            </div>
+            <div>
+                <button id="btn3">change text color button</button>
+                <button id="btn4">animation div</button>
+            </div>
+            <div id="animate">
+                <img id="image"
+                    src="https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="">
+            </div>
+        </div>
+    </div>
+
+<script>
+
+
+document.getElementById("btn1")
+        document.getElementById("btn2")
+        document.getElementById("btn3")
+        document.getElementById("btn4")
+
+
+        console.log(document.getElementById("btn1"))
+        console.log(document.getElementById("btn2"))
+        console.log(document.getElementById("btn3"))
+        console.log(document.getElementById("btn4"))
+
+        let button1 = document.getElementById("btn1");
+        let button2 = document.getElementById("btn2");
+        let button3 = document.getElementById("btn3");
+        let button4 = document.getElementById("btn4");
+    
+
+document.getElementById("div")
+console.log(document.getElementById("div"))
+let bgcolor=document.getElementById("div")
+
+
+document.getElementById("image")
+console.log(document.getElementById("image"))
+let image=document.getElementById("image");
+
+
+document.getElementById("btn3")
+console.log(document.getElementById("btn3"))
+let colour=document.getElementById("btn3");
+
+document.getElementById("animate")
+console.log(document.getElementById("animate"))
+let animate=document.getElementById("animate");
+
+
+
+
+
+
+button1.addEventListener("click" , function(){
+   bgcolor.style.backgroundColor="red";
+  
+
+})
+button2.addEventListener("click" , function(){
+    image.src="https://images.pexels.com/photos/167684/pexels-photo-167684.jpeg?auto=compress&cs=tinysrgb&w=800"
+})
+
+button3.addEventListener("click" , function(){
+   colour.style.color="red"
+})
+button4.addEventListener("click", function(){
+animate.style.animation = "mynewmove 1s 3";
+})
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
+
+<style>
+      @keyframes mynewmove {
+            from { transform: translate(0, 0); }
+            to { transform: translate(100px, 100px); }
+        }
+</style>

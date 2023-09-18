@@ -1,0 +1,34 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+.div1{
+    background-color:black;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    display: flex;
+}
+button{
+    padding: 12px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border: 3px dashed white;
+    margin-top: 20px;
+}
+img{
+    width:500px;
+    margin-top: 20px;
+}
+.div{
+    background-color: black;
+}
+@keyframes mynewmove {
+    from { transform: translate(0, 0); }
+    to { transform: translate(100px, 100px); }
+}
